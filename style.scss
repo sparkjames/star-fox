@@ -1,0 +1,254 @@
+$arwing-shadow: rgb(112,128,152);
+$arwing-light: rgb(192,216,232);
+$arwing-cannon: rgb(0,80,216);
+$arwing-wing-light: $arwing-shadow;
+$arwing-wing-shadow: rgb(72,96,112);
+$arwing-engine-1: rgb(248,208,144);
+
+$bg-land-2: rgb(24,88,56);
+
+
+@keyframes hover {
+    0% {
+        transform: translate3d(0,0,0);
+    }
+
+    50% {
+        transform: translate3d(0,.75rem,0);
+    }
+
+    100% {
+        transform: translate3d(0,0,0);
+    }
+}
+
+
+@keyframes tilt {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    12% {
+        transform: rotate(2deg);
+    }
+    24% {
+        transform: rotate(-6deg);
+    }
+
+    65% {
+        transform: rotate(0deg);
+    }
+    82% {
+        transform: rotate(-8deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+body {
+    background-color: $bg-land-2;
+    font-size: 16px;
+}
+
+.container-arwing {
+    position: relative;
+    margin: 10rem auto;
+    width: 4rem;
+
+    //animation: hover 5s infinite;
+}
+
+.tilt {
+    //animation: tilt 8s infinite;
+}
+
+
+
+#engine {
+    display: block;
+    position: relative;
+    z-index: 100;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 0;
+    	height: 0;
+        border-left: 4rem solid transparent;
+        border-right: 4rem solid transparent;
+        border-bottom: 1rem solid $arwing-engine-1;
+    }
+}
+
+
+
+#hull {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 0;
+    	height: 0;
+    	border-bottom: 3rem solid $arwing-light;
+    	border-left: 4rem solid transparent;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+    	width: 0;
+    	height: 0;
+    	border-bottom: 3rem solid $arwing-shadow;
+    	border-right: 4rem solid transparent;
+        position: absolute;
+        right: -100%;
+        top: 0;
+    }
+}
+
+
+
+
+#wing-left {
+    display: block;
+    position: absolute;
+    bottom: -6.95rem;
+    left: -11rem;
+    z-index: 50;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 0;
+    	height: 0;
+        border-left: 2rem solid transparent;
+        border-right: 3rem solid transparent;
+        border-top: 7rem solid $arwing-wing-light;
+        transform: skew(-61deg, -6deg) rotate(6deg);
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: -1.5rem;
+        left: 2rem;
+        border-left: 0.5rem solid transparent;
+        border-right: 0.75rem solid transparent;
+        border-top: 11rem solid darken($arwing-wing-light, 20%);
+        transform: skew(-61deg, -49deg) rotate(-19deg);
+    }
+}
+
+
+
+#wing-right {
+    display: block;
+    position: absolute;
+    bottom: -6.95rem;
+    right: -17rem;
+    z-index: 50;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 0;
+    	height: 0;
+        border-left: 2rem solid transparent;
+        border-right: 3rem solid transparent;
+        border-top: 7rem solid darken($arwing-wing-light, 5%);
+        transform: skew(-112deg, 6deg) rotate(-6deg);
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: -4.8em;
+        right: 3.2rem;
+        border-right: 0.5rem solid transparent;
+        border-left: 0.75rem solid transparent;
+        border-top: 17rem solid darken($arwing-wing-light, 25%);
+        transform: skew(58deg, 52deg) rotate(27deg);
+    }
+}
+
+
+
+#cannon-left {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -4.2rem;
+    z-index: 40;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 0;
+    	height: 0;
+        border-left: 1rem solid transparent;
+        border-right: 2rem solid transparent;
+        border-bottom: 6rem solid $arwing-cannon;
+        transform: skew(25deg, 0deg) rotate(1deg);
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 0;
+    	height: 0;
+        position: absolute;
+        bottom: -3em;
+        left: 1rem;
+        border-left: 1rem solid transparent;
+        border-right: 2.5rem solid transparent;
+        border-top: 3rem solid darken($arwing-cannon, 10%);
+    }
+}
+
+
+
+#cannon-right {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: -7.7rem;
+    z-index: 40;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 0;
+    	height: 0;
+        border-left: 2rem solid transparent;
+        border-right: 1rem solid transparent;
+        border-bottom: 6rem solid $arwing-cannon;
+        transform: skew(-13deg, 0deg) rotate(1deg);
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 0;
+    	height: 0;
+        position: absolute;
+        bottom: -3em;
+        left: 1rem;
+        border-left: 1rem solid transparent;
+        border-right: 2.5rem solid transparent;
+        border-top: 3rem solid darken($arwing-cannon, 10%);
+    }
+}

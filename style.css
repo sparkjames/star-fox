@@ -1,0 +1,177 @@
+@keyframes hover {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  50% {
+    transform: translate3d(0, 0.75rem, 0); }
+  100% {
+    transform: translate3d(0, 0, 0); } }
+@keyframes tilt {
+  0% {
+    transform: rotate(0deg); }
+  12% {
+    transform: rotate(2deg); }
+  24% {
+    transform: rotate(-6deg); }
+  65% {
+    transform: rotate(0deg); }
+  82% {
+    transform: rotate(-8deg); }
+  100% {
+    transform: rotate(0deg); } }
+body {
+  background-color: #185838;
+  font-size: 16px; }
+
+.container-arwing {
+  position: relative;
+  margin: 10rem auto;
+  width: 4rem; }
+
+#engine {
+  display: block;
+  position: relative;
+  z-index: 100; }
+  #engine:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 4rem solid transparent;
+    border-right: 4rem solid transparent;
+    border-bottom: 1rem solid #f8d090; }
+
+#hull {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1; }
+  #hull:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 3rem solid #c0d8e8;
+    border-left: 4rem solid transparent; }
+  #hull:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 3rem solid #708098;
+    border-right: 4rem solid transparent;
+    position: absolute;
+    right: -100%;
+    top: 0; }
+
+#wing-left {
+  display: block;
+  position: absolute;
+  bottom: -6.95rem;
+  left: -11rem;
+  z-index: 50; }
+  #wing-left:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 2rem solid transparent;
+    border-right: 3rem solid transparent;
+    border-top: 7rem solid #708098;
+    transform: skew(-61deg, -6deg) rotate(6deg); }
+  #wing-left:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -1.5rem;
+    left: 2rem;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.75rem solid transparent;
+    border-top: 11rem solid #444e5e;
+    transform: skew(-61deg, -49deg) rotate(-19deg); }
+
+#wing-right {
+  display: block;
+  position: absolute;
+  bottom: -6.95rem;
+  right: -17rem;
+  z-index: 50; }
+  #wing-right:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 2rem solid transparent;
+    border-right: 3rem solid transparent;
+    border-top: 7rem solid #64738b;
+    transform: skew(-112deg, 6deg) rotate(-6deg); }
+  #wing-right:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -4.8em;
+    right: 3.2rem;
+    border-right: 0.5rem solid transparent;
+    border-left: 0.75rem solid transparent;
+    border-top: 17rem solid #39424f;
+    transform: skew(58deg, 52deg) rotate(27deg); }
+
+#cannon-left {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -4.2rem;
+  z-index: 40; }
+  #cannon-left:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-right: 2rem solid transparent;
+    border-bottom: 6rem solid #0050d8;
+    transform: skew(25deg, 0deg) rotate(1deg); }
+  #cannon-left:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -3em;
+    left: 1rem;
+    border-left: 1rem solid transparent;
+    border-right: 2.5rem solid transparent;
+    border-top: 3rem solid #003da5; }
+
+#cannon-right {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: -7.7rem;
+  z-index: 40; }
+  #cannon-right:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 2rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-bottom: 6rem solid #0050d8;
+    transform: skew(-13deg, 0deg) rotate(1deg); }
+  #cannon-right:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -3em;
+    left: 1rem;
+    border-left: 1rem solid transparent;
+    border-right: 2.5rem solid transparent;
+    border-top: 3rem solid #003da5; }
+
+/*# sourceMappingURL=style.css.map */
