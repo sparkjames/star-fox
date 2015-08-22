@@ -4,65 +4,41 @@ $arwing-cannon: rgb(0,80,216);
 $arwing-wing-light: $arwing-shadow;
 $arwing-wing-shadow: rgb(72,96,112);
 $arwing-engine-1: rgb(248,208,144);
+$arwing-engine-2: #ab0036;
 
-$bg-land-2: rgb(24,88,56);
+$bg-sky: #50a0b8;
 
-
-@keyframes hover {
-    0% {
-        transform: translate3d(0,0,0);
-    }
-
-    50% {
-        transform: translate3d(0,.75rem,0);
-    }
-
-    100% {
-        transform: translate3d(0,0,0);
-    }
-}
+$bg-grass-1: #689898;
+$bg-grass-2: #589878;
+$bg-grass-3: #509070;
+$bg-grass-4: #488868;
+$bg-grass-5: #408060;
+$bg-grass-6: #387858;
+$bg-grass-7: #307050;
+$bg-grass-8: #286848;
+$bg-grass-9: #206040;
+$bg-grass-10: #185838;
 
 
-@keyframes tilt {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    12% {
-        transform: rotate(2deg);
-    }
-    24% {
-        transform: rotate(-6deg);
-    }
-
-    65% {
-        transform: rotate(0deg);
-    }
-    82% {
-        transform: rotate(-8deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
+@import 'css/animations.scss';
 
 
 body {
-    background-color: $bg-land-2;
+    background-color: $bg-sky;
     font-size: 16px;
 }
 
 .container-arwing {
-    position: relative;
-    margin: 10rem auto;
+    left: 50%;
+    position: absolute;
+    top: 50%;
     width: 4rem;
 
-    //animation: hover 5s infinite;
+    animation: hover 5s infinite;
 }
 
 .tilt {
-    //animation: tilt 8s infinite;
+    animation: tilt 8s infinite;
 }
 
 
@@ -79,7 +55,14 @@ body {
     	height: 0;
         border-left: 4rem solid transparent;
         border-right: 4rem solid transparent;
-        border-bottom: 1rem solid $arwing-engine-1;
+        border-bottom-width: 1rem;
+        border-bottom-style: solid;
+        border-bottom-color: $arwing-engine-1;
+        animation-name: engine-glow;
+        animation-timing-function: linear;
+        animation-duration: .2s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
     }
 }
 
@@ -246,9 +229,92 @@ body {
     	height: 0;
         position: absolute;
         bottom: -3em;
-        left: 1rem;
-        border-left: 1rem solid transparent;
-        border-right: 2.5rem solid transparent;
+        left: -.9rem;
+        border-left: 2.5rem solid transparent;
+        border-right: 1rem solid transparent;
         border-top: 3rem solid darken($arwing-cannon, 10%);
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+.container-ground {
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    bottom: 0;
+}
+
+#grass-1,
+#grass-2,
+#grass-3,
+#grass-4,
+#grass-5,
+#grass-6,
+#grass-7,
+#grass-8,
+#grass-9,
+#grass-10 {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+#grass-1 {
+    background-color: $bg-grass-1;
+    height: 100%;
+}
+#grass-2 {
+    background-color: $bg-grass-2;
+    height: 95%;
+}
+#grass-3 {
+    background-color: $bg-grass-3;
+    height: 91%;
+}
+#grass-4 {
+    background-color: $bg-grass-4;
+    height: 87%;
+}
+#grass-5 {
+    background-color: $bg-grass-5;
+    height: 80%;
+}
+#grass-6 {
+    background-color: $bg-grass-6;
+    height: 72%;
+}
+#grass-7 {
+    background-color: $bg-grass-7;
+    height: 61%;
+}
+#grass-8 {
+    background-color: $bg-grass-8;
+    height: 51%;
+}
+#grass-9 {
+    background-color: $bg-grass-9;
+    height: 38%;
+}
+#grass-10 {
+    background-color: $bg-grass-10;
+    height: 23%;
+}
+
+
+#track-line-1 {
+    position: absolute;
+    left: 25%;
+    top: 0;
+    height: 100vh;
+    width: 3px;
+    border: 3px dotted #fff;
 }

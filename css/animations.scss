@@ -1,0 +1,50 @@
+@keyframes hover {
+    0% {
+        transform: translate3d(0,0,0);
+    }
+
+    50% {
+        transform: translate3d(0,.75rem,0);
+    }
+
+    100% {
+        transform: translate3d(0,0,0);
+    }
+}
+
+
+
+@keyframes tilt {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    12% {
+        transform: rotate(2deg);
+    }
+    24% {
+        transform: rotate(-6deg);
+    }
+
+    65% {
+        transform: rotate(0deg);
+    }
+    82% {
+        transform: rotate(-8deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+@keyframes engine-glow {
+    0% {
+        border-bottom-color: $arwing-engine-1;
+    }
+    100% {
+        border-bottom-color: $arwing-engine-2;
+    }
+}
