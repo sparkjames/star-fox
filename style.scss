@@ -34,11 +34,11 @@ body {
     top: 50%;
     width: 4rem;
 
-    animation: hover 5s infinite;
+    //animation: hover 5s infinite;
 }
 
 .tilt {
-    animation: tilt 8s infinite;
+    //animation: tilt 8s infinite;
 }
 
 
@@ -314,96 +314,93 @@ body {
 #track-line-1 {
     position: absolute;
     left: 10%;
-    top: -14.8rem;
+    top: -15.8rem;
     height: 100vh;
     transform: rotate(65deg);
     width: 3px;
 
-    .line-1,
-    .line-2,
-    .line-3,
-    .line-4,
-    .line-5,
-    .line-6 {
+    div[class^='dot'] {
         background-color: #fff;
         display: block;
         height: 3px;
         left: 0;
         position: absolute;
+        top: -10%;
         width: 3px;
+        animation: none !important;
     }
 
-    .line-1 {
+    .dot-1 {
         top: 0;
-        animation: dotted-line-1 1s infinite;
+        animation: dotted-line-1 1s 0s infinite;
     }
 
-    .line-2 {
+    .dot-2 {
         top: 3%;
-        animation: dotted-line-2 1s infinite;
+        animation: dotted-line-2 1s .5s infinite;
     }
 
-    .line-3 {
+    .dot-3 {
         top: 8%;
-        animation: dotted-line-3 1s infinite;
+        animation: dotted-line-3 1s 1s infinite;
     }
 
-    .line-4 {
+    .dot-4 {
         top: 16%;
-        animation: dotted-line-4 1s infinite;
+        animation: dotted-line-4 1s 1.5s infinite;
     }
 
-    .line-5 {
+    .dot-5 {
         top: 28%;
-        animation: dotted-line-5 1s infinite;
+        animation: dotted-line-5 1s 2s infinite;
     }
 
-    .line-6 {
+    .dot-6 {
         top: 48%;
-        animation: dotted-line-6 1s infinite;
-    }
-
-    .line-7 {
-        top: 90%;//0;
-        animation: dotted-line-7 1s infinite;
-    }
-
-    .line-8 {
-        top: 155%;//3%;
-        animation: dotted-line-8 1s infinite;
-    }
-
-    .line-9 {
-        top: 230%;//8%;
-        animation: dotted-line-9 1s infinite;
-    }
-
-    .line-10 {
-        top: 300%;//16%;
-        animation: dotted-line-10 1s infinite;
+        animation: dotted-line-6 1s 2.5s infinite;
     }
 /*
-    .line-5 {
+    .dot-7 {
+        top: 90%;//0;
+        animation: dotted-line-7 1s .6s infinite;
+    }
+
+    .dot-8 {
+        top: 155%;//3%;
+        animation: dotted-line-8 1s 7s infinite;
+    }
+
+    .dot-9 {
+        top: 230%;//8%;
+        animation: dotted-line-9 1s 8s infinite;
+    }
+
+    .dot-10 {
+        top: 300%;//16%;
+        animation: dotted-line-10 1s 9s infinite;
+    }
+/*
+    .dot-5 {
         top: 500%;//28%;
     }
 
-    .line-6 {
+    .dot-6 {
         top: 500%;//48%;
     }
 
-    .line-7 {
+    .dot-7 {
         top: 500%;//90%;
     }
 
-    .line-8 {
+    .dot-8 {
         top: 500%;//155%;
     }
 
-    .line-9 {
+    .dot-9 {
         top: 500%;//230%;
     }
 
-    .line-10 {
+    .dot-10 {
         top: 500%;//300%;
     }
 */
