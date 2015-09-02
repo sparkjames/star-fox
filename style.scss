@@ -23,23 +23,43 @@ $bg-grass-10: #185838;
 @import 'css/animations.scss';
 
 
-body {
-    background-color: $bg-sky;
-    font-size: 16px;
-}
 
+//%%%%% Animations for easier turn off
 .container-arwing {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    width: 4rem;
-
-    //animation: hover 5s infinite;
+    animation: hover 5s infinite;
 }
 
 .tilt {
-    //animation: tilt 8s infinite;
+    animation: tilt 8s infinite;
 }
+
+$number-of-dots: 3;
+@for $i from 1 through $number-of-dots {
+    $delay-increment: 1 / $number-of-dots;
+    $delay: ($i - 1) * $delay-increment;
+
+    .dot-#{$i} {
+        animation: cubic-bezier(.9,0,.9,1) dotted-line-1 1s #{$delay}s infinite;
+    }
+}
+
+
+
+body {
+    background-color: $bg-sky;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.container-arwing {
+    left: 45%;
+    position: absolute;
+    top: 48%;
+    width: 4rem;
+}
+
+
 
 
 
@@ -311,98 +331,44 @@ body {
 }
 
 
-#track-line-1 {
+div[id^='track-line-'] {
     position: absolute;
-    left: 10%;
     top: -15.8rem;
     height: 100vh;
-    transform: rotate(65deg);
     width: 3px;
 
-    div[class^='dot'] {
-        background-color: #fff;
-        display: block;
-        height: 3px;
-        left: 0;
-        position: absolute;
-        top: -10%;
-        width: 3px;
-        animation: none !important;
-    }
+}
 
-    .dot-1 {
-        top: 0;
-        animation: dotted-line-1 1s 0s infinite;
-    }
+#track-line-1 { // inner left
+    left: 15%;
+    transform: rotate(65deg);
+}
 
-    .dot-2 {
-        top: 3%;
-        animation: dotted-line-2 1s .5s infinite;
-    }
+#track-line-2 { //inner right
+    right: 15%;
+    transform: rotate(-65deg);
+}
 
-    .dot-3 {
-        top: 8%;
-        animation: dotted-line-3 1s 1s infinite;
-    }
+#track-line-3 { //outer left
+    left: -13%;
+    transform: rotate(79deg);
+    top: -22.6rem;
+}
 
-    .dot-4 {
-        top: 16%;
-        animation: dotted-line-4 1s 1.5s infinite;
-    }
+#track-line-4 { //outer right
+    right: -13%;
+    transform: rotate(-79deg);
+    top: -22.6rem;
+}
 
-    .dot-5 {
-        top: 28%;
-        animation: dotted-line-5 1s 2s infinite;
-    }
 
-    .dot-6 {
-        top: 48%;
-        animation: dotted-line-6 1s 2.5s infinite;
-    }
-/*
-    .dot-7 {
-        top: 90%;//0;
-        animation: dotted-line-7 1s .6s infinite;
-    }
-
-    .dot-8 {
-        top: 155%;//3%;
-        animation: dotted-line-8 1s 7s infinite;
-    }
-
-    .dot-9 {
-        top: 230%;//8%;
-        animation: dotted-line-9 1s 8s infinite;
-    }
-
-    .dot-10 {
-        top: 300%;//16%;
-        animation: dotted-line-10 1s 9s infinite;
-    }
-/*
-    .dot-5 {
-        top: 500%;//28%;
-    }
-
-    .dot-6 {
-        top: 500%;//48%;
-    }
-
-    .dot-7 {
-        top: 500%;//90%;
-    }
-
-    .dot-8 {
-        top: 500%;//155%;
-    }
-
-    .dot-9 {
-        top: 500%;//230%;
-    }
-
-    .dot-10 {
-        top: 500%;//300%;
-    }
-*/
-
+div[class^='dot'] {
+    background-color: #fff;
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 0%;
+    transform: translate3d(0, -10vw, 0);
+    width: 3px;
 }
