@@ -372,3 +372,291 @@ div[class^='dot'] {
     transform: translate3d(0, -10vw, 0);
     width: 3px;
 }
+
+
+
+
+
+
+
+
+
+.hud {
+    bottom: 2em;
+    left: 1em;
+    position: absolute;
+}
+
+$text-stroke: #003060;
+$text-color: #fff;
+.shield {
+    background-color: transparent;
+    font-size: 2px;
+    left: 12px;
+	height: 1em;
+	position: relative;
+	width: 1em;
+
+    box-shadow:	//%%%%%% L I N E   0 %%%%%%%
+            // S
+				//0em 0 $text-stroke,
+				1em 0 $text-stroke,
+				2em 0 $text-stroke,
+				3em 0 $text-stroke,
+				4em 0 $text-stroke,
+				//5em 0 $text-stroke,
+            // H
+				6em 0 $text-stroke,
+				//7em 0 $text-stroke,
+				//8em 0 $text-stroke,
+				9em 0 $text-stroke,
+				//10em 0 $text-stroke,
+            // I
+				11em 0 $text-stroke,
+				//12em 0 $text-stroke,
+            // E
+				13em 0 $text-stroke,
+				14em 0 $text-stroke,
+				15em 0 $text-stroke,
+				16em 0 $text-stroke,
+                //17em 0 $text-stroke,
+            // L
+                18em 0 $text-stroke,
+                //19em 0 $text-stroke,
+                //20em 0 $text-stroke,
+                //21em 0 $text-stroke,
+                //22em 0 $text-stroke,
+            // D
+                23em 0 $text-stroke,
+                24em 0 $text-stroke,
+                25em 0 $text-stroke,
+                //26em 0 $text-stroke,
+                //27em 0 $text-stroke,
+			//%%%%%% L I N E   1 %%%%%%%
+            // S
+				0em 1em $text-stroke,
+				1em 1em $text-color,
+				2em 1em $text-color,
+				3em 1em $text-color,
+				4em 1em $text-color,
+				5em 1em $text-stroke,
+            // H
+				6em 1em $text-color,
+				7em 1em $text-stroke,
+				8em 1em $text-stroke,
+				9em 1em $text-color,
+				10em 1em $text-stroke,
+            // I
+				11em 1em $text-color,
+				12em 1em $text-stroke,
+            // E
+				13em 1em $text-color,
+				14em 1em $text-color,
+				15em 1em $text-color,
+				16em 1em $text-color,
+                17em 1em $text-stroke,
+            // L
+                18em 1em $text-color,
+                19em 1em $text-stroke,
+                //20em 1em $text-stroke,
+                //21em 1em $text-stroke,
+                22em 1em $text-stroke,
+            // D
+                23em 1em $text-color,
+                24em 1em $text-color,
+                25em 1em $text-color,
+                26em 1em $text-stroke,
+                //27em 1em $text-stroke,
+            //%%%%%% L I N E   2 %%%%%%%
+            // S
+				0em 2em $text-stroke,
+				1em 2em $text-color,
+				2em 2em $text-stroke,
+				3em 2em $text-stroke,
+				4em 2em $text-stroke,
+				5em 2em $text-stroke,
+            // H
+				6em 2em $text-color,
+				7em 2em $text-stroke,
+				8em 2em $text-stroke,
+				9em 2em $text-color,
+				10em 2em $text-stroke,
+            // I
+				11em 2em $text-color,
+				12em 2em $text-stroke,
+            // E
+				13em 2em $text-color,
+				14em 2em $text-stroke,
+				15em 2em $text-stroke,
+				16em 2em $text-stroke,
+                17em 2em $text-stroke,
+            // L
+                18em 2em $text-color,
+                19em 2em $text-stroke,
+                //20em 2em $text-stroke,
+                //21em 2em $text-stroke,
+                22em 2em $text-stroke,
+            // D
+                23em 2em $text-color,
+                24em 2em $text-stroke,
+                25em 2em $text-stroke,
+                26em 2em $text-color,
+                27em 2em $text-stroke,
+            //%%%%%% L I N E   3 %%%%%%%
+            // S
+                0em 3em $text-stroke,
+                1em 3em $text-color,
+                2em 3em $text-color,
+                3em 3em $text-color,
+                4em 3em $text-color,
+                5em 3em $text-stroke,
+            // H
+				6em 3em $text-color,
+				7em 3em $text-color,
+				8em 3em $text-color,
+				9em 3em $text-color,
+				10em 3em $text-stroke,
+            // I
+				11em 3em $text-color,
+				12em 3em $text-stroke,
+            // E
+				13em 3em $text-color,
+				14em 3em $text-color,
+				15em 3em $text-color,
+				16em 3em $text-stroke,
+                17em 3em $text-stroke,
+            // L
+                18em 3em $text-color,
+                19em 3em $text-stroke,
+                //20em 3em $text-stroke,
+                //21em 3em $text-stroke,
+                22em 3em $text-stroke,
+            // D
+                23em 3em $text-color,
+                24em 3em $text-stroke,
+                25em 3em $text-stroke,
+                26em 3em $text-color,
+                27em 3em $text-stroke,
+            //%%%%%% L I N E   4 %%%%%%%
+            // S
+				//0em 4em $text-stroke,
+				1em 4em $text-stroke,
+				2em 4em $text-stroke,
+				3em 4em $text-stroke,
+				4em 4em $text-color,
+				5em 4em $text-stroke,
+            // H
+				6em 4em $text-color,
+				7em 4em $text-stroke,
+				8em 4em $text-stroke,
+				9em 4em $text-color,
+				10em 4em $text-stroke,
+            // I
+				11em 4em $text-color,
+				12em 4em $text-stroke,
+            // E
+				13em 4em $text-color,
+				14em 4em $text-stroke,
+				15em 4em $text-stroke,
+				16em 4em $text-stroke,
+                17em 4em $text-stroke,
+            // L
+                18em 4em $text-color,
+                19em 4em $text-stroke,
+                20em 4em $text-stroke,
+                21em 4em $text-stroke,
+                22em 4em $text-stroke,
+            // D
+                23em 4em $text-color,
+                24em 4em $text-stroke,
+                25em 4em $text-stroke,
+                26em 4em $text-color,
+                27em 4em $text-stroke,
+            //%%%%%% L I N E   5 %%%%%%%
+            // S
+				0em 5em $text-stroke,
+				1em 5em $text-color,
+				2em 5em $text-color,
+				3em 5em $text-color,
+				4em 5em $text-color,
+				5em 5em $text-stroke,
+            // H
+				6em 5em $text-color,
+				7em 5em $text-stroke,
+				8em 5em $text-stroke,
+				9em 5em $text-color,
+				10em 5em $text-stroke,
+            // I
+				11em 5em $text-color,
+				12em 5em $text-stroke,
+            // E
+				13em 5em $text-color,
+				14em 5em $text-color,
+				15em 5em $text-color,
+				16em 5em $text-color,
+                17em 5em $text-stroke,
+            // L
+                18em 5em $text-color,
+                19em 5em $text-color,
+                20em 5em $text-color,
+                21em 5em $text-color,
+                22em 5em $text-stroke,
+            // D
+                23em 5em $text-color,
+                24em 5em $text-color,
+                25em 5em $text-color,
+                26em 5em $text-stroke,
+                //27em 5em $text-stroke,
+            //%%%%%% L I N E   6 %%%%%%%
+            // S
+				//0em 6em $text-stroke,
+				1em 6em $text-stroke,
+				2em 6em $text-stroke,
+				3em 6em $text-stroke,
+				4em 6em $text-stroke,
+				//5em 6em $text-stroke,
+            // H
+				6em 6em $text-stroke,
+				//7em 6em $text-stroke,
+				//8em 6em $text-stroke,
+				9em 6em $text-stroke,
+				//10em 6em $text-stroke,
+            // I
+				11em 6em $text-stroke,
+				//12em 6em $text-stroke,
+            // E
+				13em 6em $text-stroke,
+				14em 6em $text-stroke,
+				15em 6em $text-stroke,
+				16em 6em $text-stroke,
+                //17em 6em $text-stroke,
+            // L
+                18em 6em $text-stroke,
+                19em 6em $text-stroke,
+                20em 6em $text-stroke,
+                21em 6em $text-stroke,
+                //22em 6em $text-stroke,
+            // D
+                23em 6em $text-stroke,
+                24em 6em $text-stroke,
+                25em 6em $text-stroke,
+                //26em 6em $text-stroke,
+                //27em 6em $text-stroke,
+}
+
+
+
+.shield-border {
+    border: 2px solid #c8c8c8;
+    box-sizing: border-box;
+    height: 16px;
+    padding: 2px;
+    position: relative;
+    top: 16px;
+    width: 80px;
+}
+.shield-meter {
+    background-color: #f80000;
+    height: 8px;
+    width: 100%;
+}
