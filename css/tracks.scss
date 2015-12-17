@@ -1,0 +1,33 @@
+#track-line-1 { // inner left
+    left: 15%;
+    transform: rotate(65deg);
+}
+
+#track-line-2 { //inner right
+    right: 15%;
+    transform: rotate(-65deg);
+}
+
+#track-line-3 { //outer left
+    left: -13%;
+    transform: rotate(79deg);
+    top: -22.6rem;
+}
+
+#track-line-4 { //outer right
+    right: -13%;
+    transform: rotate(-79deg);
+    top: -22.6rem;
+}
+
+
+div[class^='dot'] {
+    background-color: #fff;
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 0%;
+    transform: translate3d(0, -10vw, 0);
+    width: 3px;
+}

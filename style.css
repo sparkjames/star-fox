@@ -332,4 +332,13 @@ div[class^='dot'] {
   height: 8px;
   width: 100%; }
 
+.slippy {
+  background-color: transparent;
+  font-size: 2px;
+  left: 12px;
+  height: 1em;
+  position: relative;
+  width: 1em;
+  box-shadow: 0em 0 #0050d8, 1em 0 #0050d8, 2em 0 #0050d8, 3em 0 #0050d8, 4em 0 #0050d8, 5em 0 #0050d8, 6em 0 #0050d8, 7em 0 #0050d8, 8em 0 #0050d8, 9em 0 #0050d8, 10em 0 #0050d8, 11em 0 #0050d8, 12em 0 #0050d8, 13em 0 #0050d8, 14em 0 #0050d8, 15em 0 #0050d8, 16em 0 #0050d8, 17em 0 #0050d8, 18em 0 #0050d8, 19em 0 #0050d8, 20em 0 #0050d8, 21em 0 #0050d8, 22em 0 #0050d8, 23em 0 #0050d8, 24em 0 #0050d8, 25em 0 #0050d8, 26em 0 #0050d8, 27em 0 #0050d8; }
+
 /*# sourceMappingURL=style.css.map */
