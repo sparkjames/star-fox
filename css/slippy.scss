@@ -14,11 +14,12 @@ $collar-2: #6088f8;
 .slippy-border {
     border: 2px solid $stroke;
     box-shadow: 0 0 0 2px $slippy-bright;
-    width: 3.4rem;
-    height: 4.4rem;
+    font-size: 2px;
+    height: 34em;
     left: 7rem;
     position: relative;
     top: -3rem;
+    width: 27em;
 }
 
 
@@ -26,7 +27,6 @@ $collar-2: #6088f8;
 	height: 1em;
 	width: 1em;
     background-color: transparent;
-    font-size: 2px;
 
     box-shadow:	//%%%%%% L I N E   0 %%%%%%%
 				0em 0 $bg,
