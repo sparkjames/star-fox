@@ -1,0 +1,135 @@
+$text-color: #e8f8f8;
+$text-shadow: #183048;
+
+.slippy-text {
+    background-color: transparent;
+    font-size: 2px;
+	height: 1em;
+	width: 1em;
+
+    box-shadow:	//%%%%%% L I N E   0 %%%%%%%
+				0em 0 transparent,
+				1em 0 $text-color,
+				2em 0 $text-color,
+				3em 0 $text-color,
+				4em 0 transparent,
+			    5em 0 transparent,
+				6em 0 $text-color,
+				7em 0 $text-color,
+				8em 0 transparent,
+				9em 0 transparent,
+				10em 0 transparent,
+				11em 0 transparent,
+				12em 0 $text-color,
+				13em 0 $text-color,
+				14em 0 transparent,
+				15em 0 $text-color,
+				16em 0 $text-color,
+                17em 0 transparent,
+                18em 0 $text-color,
+                19em 0 $text-color,
+                20em 0 transparent,
+                21em 0 $text-color,
+                22em 0 $text-color,
+                23em 0 transparent,
+                //%%%%%% L I N E   1 %%%%%%%
+				0em 1em $text-color,
+				1em 1em $text-color,
+				2em 1em $text-shadow,
+				3em 1em $text-shadow,
+				4em 1em $text-color,
+			    5em 1em transparent,
+				6em 1em $text-color,
+				7em 1em $text-color,
+				8em 1em $text-shadow,
+				9em 1em transparent,
+				10em 1em $text-color,
+				11em 1em transparent,
+				12em 1em $text-color,
+				13em 1em $text-color,
+				14em 1em $text-shadow,
+				15em 1em $text-color,
+				16em 1em $text-color,
+                17em 1em $text-shadow,
+                18em 1em $text-color,
+                19em 1em $text-color,
+                20em 1em $text-shadow,
+                21em 1em $text-color,
+                22em 1em $text-color,
+                23em 1em $text-shadow,
+                //%%%%%% L I N E   2 %%%%%%%
+				0em 2em $text-color,
+				1em 2em $text-color,
+				2em 2em $text-shadow,
+				3em 2em transparent,
+				4em 2em $text-color,
+			    5em 2em $text-shadow,
+				6em 2em $text-color,
+				7em 2em $text-color,
+				8em 2em $text-shadow,
+				9em 2em $text-color,
+				10em 2em transparent,
+				11em 2em $text-shadow,
+				12em 2em $text-color,
+				13em 2em $text-color,
+				14em 2em $text-shadow,
+				15em 2em $text-color,
+				16em 2em $text-color,
+                17em 2em $text-shadow,
+                18em 2em $text-color,
+                19em 2em $text-color,
+                20em 2em $text-shadow,
+                21em 2em $text-color,
+                22em 2em $text-color,
+                23em 2em $text-shadow,
+                //%%%%%% L I N E   3 %%%%%%%
+				0em 3em $text-color, //O
+				1em 3em $text-color,
+				2em 3em $text-shadow,
+				3em 3em transparent,
+				4em 3em $text-color,
+			    5em 3em $text-shadow,
+				6em 3em $text-color, //K
+				7em 3em $text-color,
+				8em 3em $text-color,
+				9em 3em transparent,
+				10em 3em $text-shadow,
+				11em 3em transparent,
+				12em 3em $text-color, //!
+				13em 3em $text-color,
+				14em 3em $text-shadow,
+				15em 3em $text-color, //!
+				16em 3em $text-color,
+                17em 3em $text-shadow,
+                18em 3em $text-color, //!
+                19em 3em $text-color,
+                20em 3em $text-shadow,
+                21em 3em $text-color, //!
+                22em 3em $text-color,
+                23em 3em $text-shadow,
+                //%%%%%% L I N E   4 %%%%%%%
+				0em 4em $text-color, //O
+				1em 4em $text-color,
+				2em 4em $text-shadow,
+				3em 4em transparent,
+				4em 4em $text-color,
+			    5em 4em $text-shadow,
+				6em 4em $text-color, //K
+				7em 4em $text-color,
+				8em 4em $text-color,
+				9em 4em $text-shadow,
+				10em 4em transparent,
+				11em 4em transparent,
+				12em 4em $text-color, //!
+				13em 4em $text-color,
+				14em 4em $text-shadow,
+				15em 4em $text-color, //!
+				16em 4em $text-color,
+                17em 4em $text-shadow,
+                18em 4em $text-color, //!
+                19em 4em $text-color,
+                20em 4em $text-shadow,
+                21em 4em $text-color, //!
+                22em 4em $text-color,
+                23em 4em $text-shadow,
+}
