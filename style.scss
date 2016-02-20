@@ -23,6 +23,9 @@ $bg-grass-10: #185838;
 @import 'css/animations.scss';
 
 
+// maybe for a barrel roll later
+// rotate3d(0, 0, 50, 0deg) perspective(30rem)
+
 
 //%%%%% Animations for easier toggling
 .container-arwing {
@@ -34,7 +37,15 @@ $bg-grass-10: #185838;
 }
 
 .tilt {
-    //animation: tilt 8s infinite;
+    animation: tilt 8s infinite;
+}
+
+.shadow-wing-left-tilt {
+    animation: shadow-wing-left-tilt 8s infinite;
+}
+
+.shadow-wing-right-tilt {
+    animation: shadow-wing-right-tilt 8s infinite;
 }
 
 $number-of-dots: 3;
@@ -50,12 +61,21 @@ $number-of-dots: 3;
 
 
 body {
-    background-color: $bg-sky;
+    background-color: #333;
     font-size: 16px;
     margin: 0;
     padding: 0;
 }
 
+.container {
+    background-color: $bg-sky;
+    border-radius: 100px / 60px;
+    height: 720px;
+    margin: 0 auto;
+    position: relative;
+    top: calc((100vh - 720px)/ 2);
+    width: 1280px;
+}
 
 
 
@@ -87,20 +107,22 @@ body {
     border-bottom: 1.25rem solid rgba(0, 0, 0, 0.25);
     border-left: 14rem solid transparent;
     border-right: .5rem solid transparent;
-    bottom: -1.35rem;
+    bottom: -.02rem;//-1.35rem;
     left: -14.4rem;
     position: absolute;
     transform: rotate(-10deg);
+    transform-origin: right bottom;
     width: 0;
 }
 #shadow-wing-right {
     border-bottom: 1.25rem solid rgba(0, 0, 0, 0.25);
     border-left: .5rem solid transparent;
     border-right: 14rem solid transparent;
-    bottom: -1.35rem;
+    bottom: -.02rem;//-1.35rem;
     right: -14.35rem;
     position: absolute;
     transform: rotate(10deg);
+    transform-origin: left bottom;
     width: 0;
 }
 
