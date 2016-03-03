@@ -1,23 +1,25 @@
 #track-line-1 { // inner left
-    left: 23%;
+    left: 25rem;
+    top: -8.125rem;
     transform: rotate(65deg);
 }
 
 #track-line-2 { //inner right
     right: 23%;
+    top: -8.125rem;
     transform: rotate(-65deg);
 }
 
 #track-line-3 { //outer left
     left: 8%;
     transform: rotate(79deg);
-    top: -22.6rem;
+    top: -130%;//-22.6rem;
 }
 
 #track-line-4 { //outer right
     right: 8%;
     transform: rotate(-79deg);
-    top: -22.6rem;
+    top: -130%;//-22.6rem;
 }
 
 
