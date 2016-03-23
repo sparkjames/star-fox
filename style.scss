@@ -170,10 +170,13 @@ div[id^='track-line-'] {
 
 .hud {
     bottom: 2em;
+    height: 100%;
     left: 1em;
     position: absolute;
+    width: 100%;
 }
 
 @import 'css/shield.scss';
 @import 'css/slippy.scss';
 @import 'css/slippy-text.scss';
+@import 'css/bombs-and-boost.scss';
