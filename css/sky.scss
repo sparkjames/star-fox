@@ -1,0 +1,48 @@
+$sky-1: #4898b8;
+$sky-2: #4090b8;
+$sky-3: #3888b8;
+$sky-4: #3080b8;
+$sky-5: #3078b0;
+$sky-6: #3070a8;
+$sky-7: #3068a0;
+
+[class^="sky-"] {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.sky-7 {
+    background-color: $sky-7;
+    height: 4%;
+}
+
+.sky-6 {
+    background-color: $sky-6;
+    height: 7%;
+}
+
+.sky-5 {
+    background-color: $sky-5;
+    height: 9%;
+}
+
+.sky-4 {
+    background-color: $sky-4;
+    height: 11%;
+}
+
+.sky-3 {
+    background-color: $sky-3;
+    height: 13%;
+}
+
+.sky-2 {
+    background-color: $sky-2;
+    height: 14.5%;
+}
+
+.sky-1 {
+    background-color: $sky-1;
+    height: 16%;
+}

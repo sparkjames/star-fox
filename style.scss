@@ -140,6 +140,19 @@ body {
 
 
 
+.container-sky {
+    overflow: hidden;
+    position: absolute;
+    height: 55%;//50vh;
+    width: 100%;
+    top: 0;
+}
+@import 'css/sky.scss';
+
+
+
+
+
 .container-ground {
     overflow: hidden;
     position: absolute;
