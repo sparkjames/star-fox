@@ -1,0 +1,227 @@
+.lives-container {
+    left: -1em;
+    position: absolute;
+    top: 2em;
+}
+
+
+
+$icon-highlight: #fff;
+$icon-light: #a8a8a8;
+$icon-dark: #888888;
+$icon-color: #08a0e0;
+.lives-icon {
+    background-color: transparent;
+    font-size: 2px;
+    left: 0;
+	height: 1em;
+	position: relative;
+	width: 1em;
+
+    box-shadow: //%%%%%% L I N E   0 %%%%%%%
+                0 0 $icon-light,
+                1em 0 $icon-highlight,
+                2em 0 transparent,
+                3em 0 transparent,
+                4em 0 transparent,
+                5em 0 transparent,
+                6em 0 transparent,
+                7em 0 transparent,
+                //%%%%%% L I N E   1 %%%%%%%
+                0 1em $icon-dark,
+                1em 1em $icon-light,
+                2em 1em $icon-highlight,
+                3em 1em transparent,
+                4em 1em transparent,
+                5em 1em transparent,
+                6em 1em transparent,
+                7em 1em transparent,
+                //%%%%%% L I N E   2 %%%%%%%
+                0 2em transparent,
+                1em 2em $icon-dark,
+                2em 2em $icon-light,
+                3em 2em $icon-highlight,
+                4em 2em $icon-color,
+                5em 2em $icon-light,
+                6em 2em transparent,
+                7em 2em transparent,
+                //%%%%%% L I N E   3 %%%%%%%
+                0 3em transparent,
+                1em 3em transparent,
+                2em 3em $icon-dark,
+                3em 3em $icon-light,
+                4em 3em $icon-highlight,
+                5em 3em $icon-color,
+                6em 3em $icon-light,
+                7em 3em $icon-light,
+                //%%%%%% L I N E   4 %%%%%%%
+                0 4em transparent,
+                1em 4em transparent,
+                2em 4em $icon-color,
+                3em 4em $icon-dark,
+                4em 4em $icon-light,
+                5em 4em transparent,
+                6em 4em transparent,
+                7em 4em transparent,
+                //%%%%%% L I N E   5 %%%%%%%
+                0 5em transparent,
+                1em 5em transparent,
+                2em 5em $icon-highlight,
+                3em 5em $icon-color,
+                4em 5em transparent,
+                5em 5em transparent,
+                6em 5em transparent,
+                7em 5em transparent,
+                //%%%%%% L I N E   6 %%%%%%%
+                0 6em transparent,
+                1em 6em transparent,
+                2em 6em transparent,
+                3em 6em $icon-highlight,
+                4em 6em transparent,
+                5em 6em transparent,
+                6em 6em transparent,
+                7em 6em transparent,
+                //%%%%%% L I N E   7 %%%%%%%
+                0 7em transparent,
+                1em 7em transparent,
+                2em 7em transparent,
+                3em 7em $icon-highlight,
+                4em 7em transparent,
+                5em 7em transparent,
+                6em 7em transparent,
+                7em 7em transparent;
+}
+
+
+
+$text-stroke: #003060;
+$text-color: #fff;
+.lives-number {
+    background-color: transparent;
+    font-size: 2px;
+    left: 10em;
+	height: 1em;
+	position: relative;
+	width: 1em;
+
+    box-shadow: //%%%%%% L I N E   0 %%%%%%%
+                0 0 transparent,
+                1em 0 transparent,
+                2em 0 transparent,
+                3em 0 transparent,
+                4em 0 transparent,
+                5em 0 transparent,
+                6em 0 transparent,
+                7em 0 $text-stroke,
+                8em 0 $text-stroke,
+                9em 0 $text-stroke,
+                10em 0 $text-stroke,
+                11em 0 $text-stroke,
+                12em 0 $text-stroke,
+                13em 0 $text-stroke,
+                //%%%%%% L I N E   1 %%%%%%%
+                0 1em transparent,
+                1em 1em transparent,
+                2em 1em transparent,
+                3em 1em transparent,
+                4em 1em transparent,
+                5em 1em transparent,
+                6em 1em transparent,
+                7em 1em $text-color,
+                8em 1em $text-color,
+                9em 1em $text-color,
+                10em 1em $text-color,
+                11em 1em $text-color,
+                12em 1em $text-color,
+                13em 1em $text-stroke,
+                //%%%%%% L I N E   2 %%%%%%%
+                0 2em $text-color,
+                1em 2em $text-stroke,
+                2em 2em transparent,
+                3em 2em transparent,
+                4em 2em $text-color,
+                5em 2em $text-stroke,
+                6em 2em transparent,
+                7em 2em transparent,
+                8em 2em transparent,
+                9em 2em transparent,
+                10em 2em transparent,
+                11em 2em $text-color,
+                12em 2em $text-color,
+                13em 2em $text-stroke,
+                //%%%%%% L I N E   3 %%%%%%%
+                0 3em transparent,
+                1em 3em $text-color,
+                2em 3em $text-stroke,
+                3em 3em $text-color,
+                4em 3em $text-stroke,
+                5em 3em transparent,
+                6em 3em transparent,
+                7em 3em $text-stroke,
+                8em 3em $text-stroke,
+                9em 3em $text-stroke,
+                10em 3em $text-stroke,
+                11em 3em $text-color,
+                12em 3em $text-color,
+                13em 3em $text-stroke,
+                //%%%%%% L I N E   4 %%%%%%%
+                0 4em transparent,
+                1em 4em transparent,
+                2em 4em $text-color,
+                3em 4em $text-stroke,
+                4em 4em transparent,
+                5em 4em transparent,
+                6em 4em transparent,
+                7em 4em $text-color,
+                8em 4em $text-color,
+                9em 4em $text-color,
+                10em 4em $text-color,
+                11em 4em $text-color,
+                12em 4em $text-color,
+                13em 4em $text-stroke,
+                //%%%%%% L I N E   5 %%%%%%%
+                0 5em transparent,
+                1em 5em $text-color,
+                2em 5em $text-stroke,
+                3em 5em $text-color,
+                4em 5em $text-stroke,
+                5em 5em transparent,
+                6em 5em transparent,
+                7em 5em $text-color,
+                8em 5em $text-color,
+                9em 5em $text-stroke,
+                10em 5em transparent,
+                11em 5em transparent,
+                12em 5em transparent,
+                13em 5em transparent,
+                //%%%%%% L I N E   6 %%%%%%%
+                0 6em $text-color,
+                1em 6em $text-stroke,
+                2em 6em transparent,
+                3em 6em transparent,
+                4em 6em $text-color,
+                5em 6em $text-stroke,
+                6em 6em transparent,
+                7em 6em $text-color,
+                8em 6em $text-color,
+                9em 6em $text-stroke,
+                10em 6em $text-stroke,
+                11em 6em $text-stroke,
+                12em 6em $text-stroke,
+                13em 6em $text-stroke,
+                //%%%%%% L I N E   7 %%%%%%%
+                0 7em transparent,
+                1em 7em transparent,
+                2em 7em transparent,
+                3em 7em transparent,
+                4em 7em transparent,
+                5em 7em transparent,
+                6em 7em transparent,
+                7em 7em $text-color,
+                8em 7em $text-color,
+                9em 7em $text-color,
+                10em 7em $text-color,
+                11em 7em $text-color,
+                12em 7em $text-color,
+                13em 7em $text-stroke;
+}
