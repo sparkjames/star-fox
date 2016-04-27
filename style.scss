@@ -180,6 +180,16 @@ div[id^='track-line-'] {
 
 
 
+.container-obstacles {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+@import 'css/obstacle-arch.scss';
+
+
+
+
 
 .hud {
     bottom: 2em;

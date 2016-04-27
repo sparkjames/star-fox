@@ -1,0 +1,27 @@
+$arch-main: #8ea7b8;
+$arch-highlight: #bbd6e6;
+$arch-shadow: #66768f;
+$arch-shadow-dark: #3a5262;
+
+.obstacle-arch {
+    position: absolute;
+
+    .piece-1 {
+        background-color: $arch-main;
+        height: 1rem;
+        width: 6.5rem;
+    }
+
+    .piece-2 {
+        border-bottom: 0.7rem solid $arch-main;
+        border-left: 0.7rem solid transparent;
+        border-right: 0.7rem solid transparent;
+        height: 0;
+        width: 3.25rem;
+        position: absolute;
+        left: -3.7rem;
+        top: 1.5rem;
+        transform: rotate(135deg);
+    }
+
+}
