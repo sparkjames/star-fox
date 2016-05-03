@@ -4,6 +4,7 @@ $arch-shadow: #66768f;
 $arch-shadow-dark: #3a5262;
 
 .obstacle-arch {
+    display: none;
     position: absolute;
 
     .piece-1 {
