@@ -1,3 +1,5 @@
+// sass --watch style.scss:style.css --style compressed
+
 $arwing-shadow: rgb(112,128,152);
 $arwing-light: rgb(192,216,232);
 $arwing-cannon: rgb(0,80,216);
@@ -50,6 +52,15 @@ $bg-grass-10: #185838;
     animation: tilt 8s infinite;
 }
 
+.fly-through-arch {
+	animation-name: fly-through-arch;
+	animation-timing-function: ease-in;
+	animation-duration: 2.5s;
+	animation-direction: normal;
+	animation-iteration-count: 3;
+	animation-delay: 5s;
+}
+
 .shadow-wing-left-tilt {
     animation: shadow-wing-left-tilt 8s infinite;
 }
@@ -79,9 +90,10 @@ body {
 
 .container {
     background-color: $bg-sky;
-    border-radius: 100px / 60px;
+    // border-radius: 100px / 60px;
     height: 720px;
     margin: 0 auto;
+	overflow: hidden;
     position: relative;
     top: calc((100vh - 720px)/ 2);
     width: 1280px;
@@ -95,6 +107,7 @@ body {
     position: absolute;
     top: 43%;
     width: 4rem;
+	z-index: 100;
 }
 
 @import 'css/arwing-1.scss';
@@ -184,6 +197,7 @@ div[id^='track-line-'] {
     position: absolute;
     top: 50%;
     left: 50%;
+	z-index: 10;
 }
 @import 'css/obstacle-arch.scss';
 

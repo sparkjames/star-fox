@@ -120,6 +120,27 @@
 
 
 
+@keyframes fly-through-arch {
+    0% {
+		transform: translate3d(0, 0, 0);
+    }
+	50% {
+		transform: translate3d(0, 0, 0);
+	}
+	70% {
+		transform: translate3d(0, 5rem, 0);
+	}
+    95% {
+        transform: translate3d(0, 0, 0);
+    }
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+
+
+
 
 
 
@@ -147,4 +168,38 @@
     100% {
         transform: translate3d(0, 100vw, 0);
     }
+}
+
+
+
+
+
+@keyframes arch-grow {
+    0% {
+        transform: scale3d(.5, .5, 1);
+		top: -6rem;
+		opacity: 0;
+		z-index: 10;
+    }
+	1% {
+		transform: scale3d(.5, .5, 1);
+		top: -6rem;
+		opacity: 1;
+	}
+	92% {
+		transform: scale3d(7, 7, 1);
+		top: -16rem;
+		opacity: 1;
+		z-index: 200;
+	}
+    95% {
+        transform: scale3d(7, 7, 1);
+		top: -16rem;
+		opacity: 0;
+    }
+	100% {
+		transform: scale3d(10, 10, 1);
+		top: -16rem;
+		opacity: 0;
+	}
 }
